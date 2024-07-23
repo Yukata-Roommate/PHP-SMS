@@ -1,0 +1,38 @@
+{
+    "name": "yukata-roommate/sms",
+    "description": "Easy to use SMS for PHP",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "YukataRm\\Sms\\": "src",
+            "YukataRm\\Laravel\\Sms\\": "src\\Laravel"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YukataRm\\Laravel\\Sms\\Provider\\ServiceProvider"
+            ],
+            "aliases": {
+                "Sms": "YukataRm\\Laravel\\Sms\\Facade\\Sms"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Yukata Roommate",
+            "email": "contact@yukata-roommate.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2.0",
+        "twilio/sdk": "^7.13",
+        "yukata-roommate/static-proxy": "^1.0.0"
+    },
+    "require-dev": {
+        "laravel/laravel": "^11.0"
+    },
+    "minimum-stability": "dev"
+}
