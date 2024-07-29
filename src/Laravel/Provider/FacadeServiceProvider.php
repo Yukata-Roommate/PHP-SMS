@@ -15,7 +15,7 @@ use YukataRm\Laravel\Sms\Facade\Sms;
 class FacadeServiceProvider extends ServiceProvider
 {
     /**
-     * Register Facade
+     * register Facade
      * 
      * @return void
      */
