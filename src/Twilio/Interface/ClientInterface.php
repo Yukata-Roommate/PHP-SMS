@@ -29,14 +29,14 @@ interface ClientInterface extends BaseClientInterface
      *----------------------------------------*/
 
     /**
-     * get accountSid
+     * set account sid
      *
      * @return ?string
      */
     public function accountSid(): ?string;
 
     /**
-     * set accountSid
+     * set account sid
      *
      * @param string $accountSid
      * @return static
@@ -44,14 +44,14 @@ interface ClientInterface extends BaseClientInterface
     public function setAccountSid(string $accountSid): static;
 
     /**
-     * get authToken
+     * get auth token
      *
      * @return ?string
      */
     public function authToken(): ?string;
 
     /**
-     * set authToken
+     * set auth token
      *
      * @param string $authToken
      * @return static
@@ -59,18 +59,18 @@ interface ClientInterface extends BaseClientInterface
     public function setAuthToken(string $authToken): static;
 
     /*----------------------------------------*
-     * StatusCallback
+     * Status Callback
      *----------------------------------------*/
 
     /**
-     * get callback URL
+     * get callback url
      *
      * @return ?string
      */
     public function statusCallback(): ?string;
 
     /**
-     * set callback URL
+     * set callback url
      *
      * @param string $statusCallback
      * @return static

@@ -2,17 +2,17 @@
 
 namespace YukataRm\Laravel\Sms\Provider;
 
-use Illuminate\Support\ServiceProvider as Provider;
+use Illuminate\Support\ServiceProvider;
 
 use YukataRm\Laravel\Sms\Facade\Manager;
 use YukataRm\Laravel\Sms\Facade\Sms;
 
 /**
- * ServiceProvider
+ * Facade Service Provider
  * 
  * @package YukataRm\Laravel\Sms\Provider
  */
-class ServiceProvider extends Provider
+class FacadeServiceProvider extends ServiceProvider
 {
     /**
      * Register Facade

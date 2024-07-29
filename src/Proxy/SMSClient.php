@@ -18,7 +18,7 @@ use YukataRm\Sms\Proxy\Manager;
 class Sms extends StaticProxy
 {
     /** 
-     * Get class name of call dynamic method
+     * get class name calling dynamic method
      * 
      * @return string 
      */

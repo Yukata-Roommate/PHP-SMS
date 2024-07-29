@@ -19,7 +19,7 @@ class Response extends BaseResponse implements ResponseInterface
      *----------------------------------------*/
 
     /**
-     * Twilio Response
+     * Twilio response
      *
      * @var \Twilio\Rest\Api\V2010\Account\MessageInstance
      */

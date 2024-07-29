@@ -3,7 +3,7 @@
     "description": "Easy to use SMS for PHP",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "autoload": {
         "psr-4": {
             "YukataRm\\Sms\\": "src",
@@ -13,7 +13,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "YukataRm\\Laravel\\Sms\\Provider\\ServiceProvider"
+                "YukataRm\\Laravel\\Sms\\Provider\\FacadeServiceProvider"
             ],
             "aliases": {
                 "Sms": "YukataRm\\Laravel\\Sms\\Facade\\Sms"

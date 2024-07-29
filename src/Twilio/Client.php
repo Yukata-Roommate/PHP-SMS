@@ -99,7 +99,7 @@ class Client extends BaseClient implements ClientInterface
      *----------------------------------------*/
 
     /**
-     * account SID
+     * account sid
      *
      * @var ?string
      */
@@ -113,7 +113,7 @@ class Client extends BaseClient implements ClientInterface
     protected ?string $authToken = null;
 
     /**
-     * get account SID
+     * get account sid
      *
      * @return ?string
      */
@@ -123,7 +123,7 @@ class Client extends BaseClient implements ClientInterface
     }
 
     /**
-     * set account SID
+     * set account sid
      *
      * @param string $accountSid
      * @return static
@@ -163,14 +163,14 @@ class Client extends BaseClient implements ClientInterface
      *----------------------------------------*/
 
     /**
-     * callback URL
+     * callback url
      *
      * @var string
      */
     protected ?string $statusCallback = null;
 
     /**
-     * get callback URL
+     * get callback url
      *
      * @return ?string
      */
@@ -180,7 +180,7 @@ class Client extends BaseClient implements ClientInterface
     }
 
     /**
-     * set callback URL
+     * set callback url
      *
      * @param string $statusCallback
      * @return static
