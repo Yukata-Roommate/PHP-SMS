@@ -36,21 +36,21 @@ interface ResponseInterface extends BaseResponseInterface
      * 
      * @return string|null
      */
-    public function sender(): ?string;
+    public function sender(): string|null;
 
     /**
      * get recipient
      * 
      * @return string|null
      */
-    public function recipient(): ?string;
+    public function recipient(): string|null;
 
     /**
      * get body
      * 
-     * @return ?string
+     * @return string|null
      */
-    public function body(): ?string;
+    public function body(): string|null;
 
     /**
      * get status
@@ -64,42 +64,42 @@ interface ResponseInterface extends BaseResponseInterface
      * 
      * @return int|null
      */
-    public function errorCode(): ?int;
+    public function errorCode(): int|null;
 
     /**
      * get errorMessage
      * 
-     * @return ?string
+     * @return string|null
      */
-    public function errorMessage(): ?string;
+    public function errorMessage(): string|null;
 
     /**
      * get sid
      * 
      * @return string|null
      */
-    public function sid(): ?string;
+    public function sid(): string|null;
 
     /**
      * get accountSid
      * 
      * @return string|null
      */
-    public function accountSid(): ?string;
+    public function accountSid(): string|null;
 
     /**
      * get apiVersion
      * 
      * @return string|null
      */
-    public function apiVersion(): ?string;
+    public function apiVersion(): string|null;
 
     /**
      * get dateCreated
      * 
      * @return \DateTime|null
      */
-    public function dateCreated(): ?\DateTime;
+    public function dateCreated(): \DateTime|null;
 
     /**
      * get dateCreated as string
@@ -107,14 +107,14 @@ interface ResponseInterface extends BaseResponseInterface
      * @param string $format
      * @return string|null
      */
-    public function dateCreatedString(string $format = "Y-m-d H:i:s"): ?string;
+    public function dateCreatedString(string $format = "Y-m-d H:i:s"): string|null;
 
     /**
      * get dateUpdated
      * 
      * @return \DateTime|null
      */
-    public function dateUpdated(): ?\DateTime;
+    public function dateUpdated(): \DateTime|null;
 
     /**
      * get dateUpdated as string
@@ -122,14 +122,14 @@ interface ResponseInterface extends BaseResponseInterface
      * @param string $format
      * @return string|null
      */
-    public function dateUpdatedString(string $format = "Y-m-d H:i:s"): ?string;
+    public function dateUpdatedString(string $format = "Y-m-d H:i:s"): string|null;
 
     /**
      * get dateSent
      * 
      * @return \DateTime|null
      */
-    public function dateSent(): ?\DateTime;
+    public function dateSent(): \DateTime|null;
 
     /**
      * get dateSent as string
@@ -137,49 +137,49 @@ interface ResponseInterface extends BaseResponseInterface
      * @param string $format
      * @return string|null
      */
-    public function dateSentString(string $format = "Y-m-d H:i:s"): ?string;
+    public function dateSentString(string $format = "Y-m-d H:i:s"): string|null;
 
     /**
      * get price
      * 
      * @return string|null
      */
-    public function price(): ?string;
+    public function price(): string|null;
 
     /**
      * get price as float
      * 
      * @return float|null
      */
-    public function priceFloat(): ?float;
+    public function priceFloat(): float|null;
 
     /**
      * get priceUnit
      * 
      * @return string|null
      */
-    public function priceUnit(): ?string;
+    public function priceUnit(): string|null;
 
     /**
      * get priceUnit as float
      * 
      * @return float|null
      */
-    public function priceUnitFloat(): ?float;
+    public function priceUnitFloat(): float|null;
 
     /**
      * get uri
      * 
      * @return string|null
      */
-    public function uri(): ?string;
+    public function uri(): string|null;
 
     /**
      * get numSegments
      * 
      * @return string|null
      */
-    public function numSegments(): ?string;
+    public function numSegments(): string|null;
 
     /**
      * get direction
@@ -193,19 +193,19 @@ interface ResponseInterface extends BaseResponseInterface
      * 
      * @return string|null
      */
-    public function messagingServiceSid(): ?string;
+    public function messagingServiceSid(): string|null;
 
     /**
      * get numMedia
      * 
      * @return string|null
      */
-    public function numMedia(): ?string;
+    public function numMedia(): string|null;
 
     /**
      * get subresourceUris
      * 
      * @return array<string, string>|null
      */
-    public function subresourceUris(): ?array;
+    public function subresourceUris(): array|null;
 }

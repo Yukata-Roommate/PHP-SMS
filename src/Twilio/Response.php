@@ -78,7 +78,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return string|null
      */
-    public function sender(): ?string
+    public function sender(): string|null
     {
         return $this->response->from;
     }
@@ -88,7 +88,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return string|null
      */
-    public function recipient(): ?string
+    public function recipient(): string|null
     {
         return $this->response->to;
     }
@@ -96,9 +96,9 @@ class Response extends BaseResponse implements ResponseInterface
     /**
      * get body
      * 
-     * @return ?string
+     * @return string|null
      */
-    public function body(): ?string
+    public function body(): string|null
     {
         return $this->response->body;
     }
@@ -118,7 +118,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return int|null
      */
-    public function errorCode(): ?int
+    public function errorCode(): int|null
     {
         return $this->response->errorCode;
     }
@@ -126,9 +126,9 @@ class Response extends BaseResponse implements ResponseInterface
     /**
      * get errorMessage
      * 
-     * @return ?string
+     * @return string|null
      */
-    public function errorMessage(): ?string
+    public function errorMessage(): string|null
     {
         return $this->response->errorMessage;
     }
@@ -138,7 +138,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return string|null
      */
-    public function sid(): ?string
+    public function sid(): string|null
     {
         return $this->response->sid;
     }
@@ -148,7 +148,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return string|null
      */
-    public function accountSid(): ?string
+    public function accountSid(): string|null
     {
         return $this->response->accountSid;
     }
@@ -158,7 +158,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return string|null
      */
-    public function apiVersion(): ?string
+    public function apiVersion(): string|null
     {
         return $this->response->apiVersion;
     }
@@ -168,7 +168,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return \DateTime|null
      */
-    public function dateCreated(): ?\DateTime
+    public function dateCreated(): \DateTime|null
     {
         return $this->response->dateCreated;
     }
@@ -179,7 +179,7 @@ class Response extends BaseResponse implements ResponseInterface
      * @param string $format
      * @return string|null
      */
-    public function dateCreatedString(string $format = "Y-m-d H:i:s"): ?string
+    public function dateCreatedString(string $format = "Y-m-d H:i:s"): string|null
     {
         $dateCreated = $this->dateCreated();
 
@@ -191,7 +191,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return \DateTime|null
      */
-    public function dateUpdated(): ?\DateTime
+    public function dateUpdated(): \DateTime|null
     {
         return $this->response->dateUpdated;
     }
@@ -202,7 +202,7 @@ class Response extends BaseResponse implements ResponseInterface
      * @param string $format
      * @return string|null
      */
-    public function dateUpdatedString(string $format = "Y-m-d H:i:s"): ?string
+    public function dateUpdatedString(string $format = "Y-m-d H:i:s"): string|null
     {
         $dateUpdated = $this->dateUpdated();
 
@@ -214,7 +214,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return \DateTime|null
      */
-    public function dateSent(): ?\DateTime
+    public function dateSent(): \DateTime|null
     {
         return $this->response->dateSent;
     }
@@ -225,7 +225,7 @@ class Response extends BaseResponse implements ResponseInterface
      * @param string $format
      * @return string|null
      */
-    public function dateSentString(string $format = "Y-m-d H:i:s"): ?string
+    public function dateSentString(string $format = "Y-m-d H:i:s"): string|null
     {
         $dateSent = $this->dateSent();
 
@@ -237,7 +237,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return string|null
      */
-    public function price(): ?string
+    public function price(): string|null
     {
         return $this->response->price;
     }
@@ -247,7 +247,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return float|null
      */
-    public function priceFloat(): ?float
+    public function priceFloat(): float|null
     {
         $price = $this->price();
 
@@ -259,7 +259,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return string|null
      */
-    public function priceUnit(): ?string
+    public function priceUnit(): string|null
     {
         return $this->response->priceUnit;
     }
@@ -269,7 +269,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return float|null
      */
-    public function priceUnitFloat(): ?float
+    public function priceUnitFloat(): float|null
     {
         $priceUnit = $this->priceUnit();
 
@@ -281,7 +281,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return string|null
      */
-    public function uri(): ?string
+    public function uri(): string|null
     {
         return $this->response->uri;
     }
@@ -291,7 +291,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return string|null
      */
-    public function numSegments(): ?string
+    public function numSegments(): string|null
     {
         return $this->response->numSegments;
     }
@@ -311,7 +311,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return string|null
      */
-    public function messagingServiceSid(): ?string
+    public function messagingServiceSid(): string|null
     {
         return $this->response->messagingServiceSid;
     }
@@ -321,7 +321,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return string|null
      */
-    public function numMedia(): ?string
+    public function numMedia(): string|null
     {
         return $this->response->numMedia;
     }
@@ -331,7 +331,7 @@ class Response extends BaseResponse implements ResponseInterface
      * 
      * @return array<string, string>|null
      */
-    public function subresourceUris(): ?array
+    public function subresourceUris(): array|null
     {
         return $this->response->subresourceUris;
     }

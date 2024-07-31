@@ -31,23 +31,23 @@ abstract class BaseClient implements ClientInterface
     /**
      * recipient
      *
-     * @var ?string
+     * @var string|null
      */
-    protected ?string $recipient = null;
+    protected string|null $recipient = null;
 
     /**
      * sender
      *
-     * @var ?string
+     * @var string|null
      */
-    protected ?string $sender = null;
+    protected string|null $sender = null;
 
     /**
      * get recipient
      *
-     * @return string
+     * @return string|null
      */
-    public function recipient(): ?string
+    public function recipient(): string|null
     {
         return $this->recipient;
     }
@@ -68,9 +68,9 @@ abstract class BaseClient implements ClientInterface
     /**
      * get sender
      *
-     * @return ?string
+     * @return string|null
      */
-    public function sender(): ?string
+    public function sender(): string|null
     {
         return $this->sender;
     }

@@ -29,9 +29,9 @@ interface ClientInterface
     /**
      * get recipient
      *
-     * @return string
+     * @return string|null
      */
-    public function recipient(): ?string;
+    public function recipient(): string|null;
 
     /**
      * set recipient
@@ -44,9 +44,9 @@ interface ClientInterface
     /**
      * get sender
      *
-     * @return ?string
+     * @return string|null
      */
-    public function sender(): ?string;
+    public function sender(): string|null;
 
     /**
      * set sender

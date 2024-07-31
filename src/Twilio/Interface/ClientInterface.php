@@ -31,9 +31,9 @@ interface ClientInterface extends BaseClientInterface
     /**
      * set account sid
      *
-     * @return ?string
+     * @return string|null
      */
-    public function accountSid(): ?string;
+    public function accountSid(): string|null;
 
     /**
      * set account sid
@@ -46,9 +46,9 @@ interface ClientInterface extends BaseClientInterface
     /**
      * get auth token
      *
-     * @return ?string
+     * @return string|null
      */
-    public function authToken(): ?string;
+    public function authToken(): string|null;
 
     /**
      * set auth token
@@ -65,9 +65,9 @@ interface ClientInterface extends BaseClientInterface
     /**
      * get callback url
      *
-     * @return ?string
+     * @return string|null
      */
-    public function statusCallback(): ?string;
+    public function statusCallback(): string|null;
 
     /**
      * set callback url

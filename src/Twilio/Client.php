@@ -101,23 +101,23 @@ class Client extends BaseClient implements ClientInterface
     /**
      * account sid
      *
-     * @var ?string
+     * @var string|null
      */
-    protected ?string $accountSid = null;
+    protected string|null $accountSid = null;
 
     /**
      * auth token
      *
-     * @var string
+     * @var string|null
      */
-    protected ?string $authToken = null;
+    protected string|null $authToken = null;
 
     /**
      * get account sid
      *
-     * @return ?string
+     * @return string|null
      */
-    public function accountSid(): ?string
+    public function accountSid(): string|null
     {
         return $this->accountSid;
     }
@@ -138,9 +138,9 @@ class Client extends BaseClient implements ClientInterface
     /**
      * get auth token
      *
-     * @return ?string
+     * @return string|null
      */
-    public function authToken(): ?string
+    public function authToken(): string|null
     {
         return $this->authToken;
     }
@@ -165,16 +165,16 @@ class Client extends BaseClient implements ClientInterface
     /**
      * callback url
      *
-     * @var string
+     * @var string|null
      */
-    protected ?string $statusCallback = null;
+    protected string|null $statusCallback = null;
 
     /**
      * get callback url
      *
-     * @return ?string
+     * @return string|null
      */
-    public function statusCallback(): ?string
+    public function statusCallback(): string|null
     {
         return $this->statusCallback;
     }
