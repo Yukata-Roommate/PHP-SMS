@@ -42,7 +42,7 @@ class Client extends BaseClient implements ClientInterface
     {
         $recipient = $this->recipient();
 
-        if (is_null($recipient)) throw new \RuntimeException("SMS recipient is not set.");
+        if (is_null($recipient)) throw new \RuntimeException("recipient is not set.");
 
         $client  = $this->getClient();
         $options = $this->getOptions();
@@ -62,9 +62,9 @@ class Client extends BaseClient implements ClientInterface
         $accountSid = $this->accountSid();
         $authToken  = $this->authToken();
 
-        if (is_null($accountSid)) throw new \RuntimeException("Twilio account SID is not set.");
+        if (is_null($accountSid)) throw new \RuntimeException("account SID is not set.");
 
-        if (is_null($authToken)) throw new \RuntimeException("Twilio auth token is not set.");
+        if (is_null($authToken)) throw new \RuntimeException("auth token is not set.");
 
         return new TwilioClient($accountSid, $authToken);
     }
@@ -82,9 +82,9 @@ class Client extends BaseClient implements ClientInterface
         $body           = $this->body();
         $statusCallback = $this->statusCallback();
 
-        if (is_null($sender)) throw new \RuntimeException("SMS sender is not set.");
+        if (is_null($sender)) throw new \RuntimeException("sender is not set.");
 
-        if (is_null($body)) throw new \RuntimeException("SMS body is not set.");
+        if (is_null($body)) throw new \RuntimeException("body is not set.");
 
         $options["from"] = $sender;
         $options["body"] = $body;
