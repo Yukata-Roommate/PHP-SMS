@@ -3,17 +3,10 @@
     "description": "Easy to use SMS for PHP",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "autoload": {
         "psr-4": {
             "YukataRm\\Sms\\": "src"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "aliases": {
-                "Sms": "YukataRm\\Sms\\Proxy\\Sms"
-            }
         }
     },
     "authors": [
