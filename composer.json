@@ -3,20 +3,16 @@
     "description": "Easy to use SMS for PHP",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "autoload": {
         "psr-4": {
-            "YukataRm\\Sms\\": "src",
-            "YukataRm\\Laravel\\Sms\\": "src\\Laravel"
+            "YukataRm\\Sms\\": "src"
         }
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "YukataRm\\Laravel\\Sms\\Provider\\FacadeServiceProvider"
-            ],
             "aliases": {
-                "Sms": "YukataRm\\Laravel\\Sms\\Facade\\Sms"
+                "Sms": "YukataRm\\Sms\\Proxy\\Sms"
             }
         }
     },
@@ -30,9 +26,6 @@
         "php": ">=8.2.0",
         "twilio/sdk": "^7.13",
         "yukata-roommate/static-proxy": "^1.0.0"
-    },
-    "require-dev": {
-        "laravel/laravel": "^11.0"
     },
     "minimum-stability": "dev"
 }
